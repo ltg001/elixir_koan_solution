@@ -143,6 +143,20 @@
     Integer.undigits([1, 2, 3, 4]) == 1234
     ```
 
+10. 转成字符串
+
+    ```elixir
+    "1234" == Integer.to_string(1234)
+    ```
+
+11. 进制转换
+
+    ```elixir
+    Integer.parse("2A", 16) == {42, ""} 
+    # 将16进制下的 2A 化为10进制下的42
+    # 后面的括号作用见下个例子
+    ```
+
 ## Atoms
 
 ## Tuples
